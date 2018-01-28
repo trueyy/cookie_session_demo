@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Login Application</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/my.js"></script>
+</head>
+<body>
+  <div>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="password" required>
+
+    <button onclick="login('cookie')">Login with cookie</button>
+    <button onclick="login('localSession')">Login with localSession</button>
+    <button onclick="login('localStorage')">Login with localStorage</button>
+    <button onclick="logoff()">Logoff</button>
+  </div>
+
+</body>
+</html>
